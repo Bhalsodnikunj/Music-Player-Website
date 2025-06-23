@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phone Music App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="player">
+    <h1>📱 My Music</h1>
+
+    
+
+    <div class="waveform">
+      <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    </div>
+
+    <h2 id="title">No Song</h2>
+    <audio id="audio" src=""></audio>
+
+    <div class="controls">
+      <button onclick="prevSong()">⏮️</button>
+      <button id="playBtn">▶️</button>
+      <button onclick="nextSong()">⏭️</button>
+    </div>
+
+    <input type="file" id="upload" accept="audio/*" />
+    <label for="upload" class="upload-btn">Upload Song 🎶</label>
+
+    <ul id="playlist"></ul>
+
+    <div id="toast" class="toast">✅ Song uploaded!</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
